@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="java_project/tron/src/main/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/src/build/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/src/demo/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/src/generated/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/src/legacy/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/src/main/core-api/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/src/main/core-impl/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/src/main/protocol-impl/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/src/main/user-api/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/src/main/user-impl/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/src/test/java"/>
+	<classpathentry kind="src" path="java_project/tron/src/test/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/main/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/src/build/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/src/demo/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/src/generated/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/src/legacy/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/src/main/core-api/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/src/main/core-impl/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/src/main/protocol-impl/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/src/main/user-api/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/src/main/user-impl/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/src/test/java"/>
+	<classpathentry kind="src" path="LIVRABLES/PROJECT FILES/tron/src/test/java"/>
+	<classpathentry kind="lib" path="java_project/tron/src/ressources/jdbc-oracle.jar"/>
+	<classpathentry kind="lib" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/lib/c3p0-0.9.1-pre6.jar"/>
+	<classpathentry kind="lib" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/lib/jboss-common-jdbc-wrapper-src.jar"/>
+	<classpathentry kind="lib" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/lib/jboss-common-jdbc-wrapper.jar"/>
+	<classpathentry kind="lib" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/lib/protobuf-java-2.6.0.jar"/>
+	<classpathentry kind="lib" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="java_project/tron/src/ressources/mysql-connector-java-8.0.11/mysql-connector-java-8.0.11.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/JAR FILES/600x400_easy.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/JAR FILES/600x400_hard.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/JAR FILES/600x400_insane.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/JAR FILES/600x400_veryhard.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/PROJECT FILES/tron/src/ressources/jdbc-oracle.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/lib/c3p0-0.9.1-pre6.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/lib/jboss-common-jdbc-wrapper-src.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/lib/jboss-common-jdbc-wrapper.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/lib/protobuf-java-2.6.0.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/mysql-connector-java-8.0.11.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
