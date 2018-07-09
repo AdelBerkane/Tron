@@ -137,4 +137,6 @@ public abstract class Map extends JComponent {
 		public Dimension getPreferredSize() {
 			return new Dimension(MAPWIDTH, MAPHEIGHT);
 		}
+		
+		
 }
