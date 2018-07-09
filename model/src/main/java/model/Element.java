@@ -1,7 +1,6 @@
 package model;
 
 import java.awt.Graphics;
-import java.awt.Shape;
 import java.util.ArrayList;
 
 public abstract class Element {
@@ -17,16 +16,6 @@ public abstract class Element {
 
 	int rightBound; // Maximum permissible x, y values.
 	int bottomBound;
-	
-	/**
-	 *  Constructor of the class
-	 * @param x
-	 * @param y
-	 * @param velocityX : velocityX
-	 * @param velocityY : velocityY
-	 * @param width : the width
-	 * @param height : the height
-	 */
 
 	public Element(int x, int y, int velocityX, int velocityY, int width, int height) {
 		this.x = x;
@@ -37,11 +26,13 @@ public abstract class Element {
 		this.height = height;
 	}
 	
+	// adjusts the bounds of the court
 	public void setBounds(int width, int height) {
 		rightBound = width - this.width;
 		bottomBound = height - this.height;
 	}
 	
+	// sets the player's x velocity as long as it doesn't oppose current motion
 	public void setXVelocity(int velocityX) {
 		if (!(velocityX > 0 && this.velocityX < 0)
 				&& !(velocityX < 0 && this.velocityX > 0)) {
@@ -49,13 +40,15 @@ public abstract class Element {
 		}
 	}
 	
+	// sets the player's y velocity as long as it doesn't oppose current motion
 	public void setYVelocity(int velocityY) {
 		if (!(velocityY > 0 && this.velocityY < 0)
 				&& !(velocityY < 0 && this.velocityY > 0)) {
 			this.velocityY = velocityY;
 		}
 	}
-	
+
+	// Move the object at the given velocity.
 	public void move() {
 		x += velocityX;
 		y += velocityY;
@@ -128,5 +121,4 @@ public abstract class Element {
 	
 	// returns the player's path as a list of shapes
 	public abstract ArrayList<Shape> getPath();
-
 }
