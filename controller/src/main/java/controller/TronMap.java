@@ -1,4 +1,4 @@
-package view;
+package controller;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -15,6 +15,7 @@ import javax.swing.*;
 import model.Player;
 import model.Playerhuman;
 import model.Score;
+import view.Map;
 
 @SuppressWarnings("serial")
 public class TronMap extends Map {
@@ -26,49 +27,49 @@ public class TronMap extends Map {
 		super(sco1, null, p);
 	}
 	
-	void tick() {
-		for (Player k: players) {
+	protected void tick() {
+		for (Player k: getPlayers()) {
 			if (k != null) {
 				k.setBounds(getWidth(), getHeight());
 				k.move();
 			}
 		}
-		for (Player k1: players) {
-			for (Player k2: players) {
+		for (Player k1: getPlayers()) {
+			for (Player k2: getPlayers()) {
 				k1.crash(k1.intersects(k2));
 			}
 		}
-		if (!player.getAlive()) {
-			timer.stop();
-			run = false;
+		if (!Player.getAlive()) {
+			getTimer().stop();
+			setRun(false);
 			addScore();
 			setScore();
 		} else {
-			run = true;
+			setRun(true);
 			setScore();
 		}
 		repaint();
 	}
 	
 	public void setScore() {
-		score1.setText("   Score: " + ++i + 
-				"   Boost: " + player.getBoostsLeft());
-		score1.repaint();
+		getScore1().setText("   Score: " + setI(getI() + 1) + 
+				"   Boost: " + getPlayer().getBoostsLeft());
+		getScore1().repaint();
 	}	
 	
 	public void reset() {
 		int[] start1 = getRandomStart();
-		player = new Playerhuman(start1[0], start1[1], 
-				start1[2], start1[3], Color.CYAN);
-		players[0] = player;
-		i = 0;
-		timer.start();
+		setPlayer(new Playerhuman(start1[0], start1[1], 
+				start1[2], start1[3], Color.CYAN));
+		getPlayers()[0] = getPlayer();
+		setI(0);
+		getTimer().start();
 		requestFocusInWindow();
 	}
 	
 	public void addScore() {
 		try {
-			highs.addHighScore(i + 1);
+			highs.addHighScore(getI() + 1);
 			highScores = highs.getHighScores();
 		} catch (IOException e) {
 		}
@@ -108,11 +109,11 @@ public class TronMap extends Map {
 	@Override
 	public void paintComponent(Graphics g) {
 	   super.paintComponent(g);
-	   if (!player.getAlive()) {
+	   if (!getPlayer().getAlive()) {
 		   try{
 			   BufferedImage picture = ImageIO.read(new File("over.png"));
 			   g.drawImage(
-					   picture, MAPWIDTH / 2 - 230, MAPHEIGHT / 2 - 110, null);
+					   picture, getMAPWIDTH() / 2 - 230, getMAPHEIGHT() / 2 - 110, null);
 		   } catch (IOException e) {
 		   }
 	   }

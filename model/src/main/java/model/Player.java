@@ -112,7 +112,7 @@ public abstract class Player extends Element {
 	}
 	
 	// returns the state of the Player
-	public boolean getAlive() {
+	public  boolean getAlive() {
 		return alive;
 	}
 	
