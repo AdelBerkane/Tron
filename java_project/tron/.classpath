@@ -23,8 +23,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="D:/Adel/Documents/Adel/tron_project-master/LIVRABLES/PROJECT FILES/tron/src/ressources/jdbc-oracle.jar"/>
-	<classpathentry kind="lib" path="D:/Adel/Documents/Adel/tron_project-master/LIVRABLES/PROJECT FILES/tron/src/ressources/mysql-connector-java-8.0.11/mysql-connector-java-8.0.11.jar"/>
+	<classpathentry kind="lib" path="D:/Adel/Documents/Adel/Tron/Tron/LIVRABLES/jdbc-oracle.jar"/>
+	<classpathentry kind="lib" path="D:/Adel/Documents/Adel/Tron/Tron/LIVRABLES/mysql-connector-java-8.0.11.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

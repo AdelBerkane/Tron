@@ -55,6 +55,7 @@ public class Game extends JPanel implements ActionListener {
 	// Instances of our lightcycles
 	private Players player1 = new Players();
 	private Players player2 = new Players();
+	
 
 	// Define the variable winner for the endscreen and the database
 	private String winner;
